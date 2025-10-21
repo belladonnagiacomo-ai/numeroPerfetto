@@ -15,19 +15,26 @@
             }
             if (somma == n)
             {
-                Console.WriteLine("il numero e perfetto");
+               
                 return true;
             }
             
             
-            Console.WriteLine("il numero non e perfetto");
+           
             return false;
         }
         static void Main(string[] args)
         {
             Console.WriteLine("dammi un numero da analizzare");
             int n = Convert.ToInt32(Console.ReadLine());
-            numeroP(n);
+           if ( numeroP(n) == true)
+           {
+                Console.WriteLine("il numero e perfetto");
+           }
+           else
+           {
+                Console.WriteLine("il numero non e perfetto");
+           }
            
         }
     }
