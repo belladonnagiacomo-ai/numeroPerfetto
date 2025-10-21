@@ -27,15 +27,24 @@
         {
             Console.WriteLine("dammi un numero da analizzare");
             int n = Convert.ToInt32(Console.ReadLine());
-           if ( numeroP(n) == true)
-           {
-                Console.WriteLine("il numero e perfetto");
-           }
-           else
-           {
-                Console.WriteLine("il numero non e perfetto");
-           }
-           
+            int cont = 0;
+            for (int c = 2; c < 50; c++)
+            {
+                if (numeroP(c) == true)
+                {
+                    cont++;
+                }
+            }
+            Console.WriteLine("i numeri perfetti da 1 a 50 sono:" + cont);
+                if (numeroP(n) == true)
+                {
+                    Console.WriteLine("il numero e perfetto");
+                }
+                else
+                {
+                    Console.WriteLine("il numero non e perfetto");
+                }
+            
         }
     }
 }
