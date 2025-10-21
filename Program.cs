@@ -28,7 +28,7 @@
             Console.WriteLine("dammi un numero da analizzare");
             int n = Convert.ToInt32(Console.ReadLine());
             numeroP(n);
-            gjvdyatfvgdwh
+           
         }
     }
 }
